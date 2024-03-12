@@ -22,6 +22,13 @@
             font-family: "Inter", sans-serif;
         }
 
+        section {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .title-container {
             border-bottom: 1px solid #D9D9D9;
         }
@@ -48,23 +55,33 @@
         </header>
         <section>
             <article>
-                <img class="credit-card-img" />  <!--Credit card image here-->
+                <img class="credit-card-img" src="https://picsum.photos/311/200" />  <!--Credit card image here-->
                 <div class="button-container">
                     <button>View Statement</button>
                     <button>Pay Now</button>
                 </div>
             </article>
             <aside>
-                <!--amount due-->
-                <div></div>
-                <!--statement date-->
-                <div></div>
-                <!--due date-->
-                <div></div>
-                <!--available balance-->
-                <div></div>
-                <!--credit limit-->
-                <div></div>
+                <div>
+                    <h3 class="section-header">Amount Due</h3>
+                    <strong class="section-value">$82.46</strong>
+                </div>
+                <div>
+                    <h3 class="section-header">Statement Date</h3>
+                    <strong class="section-value">12/05/2023</strong>
+                </div>
+                <div>
+                    <h3 class="section-header">Due Date</h3>
+                    <strong class="section-value">12/28/2024</strong>
+                </div>
+                <div>
+                    <h3 class="section-header">Available Balance</h3>
+                    <strong class="section-value">$7,615.04</strong>
+                </div>
+                <div>
+                    <h3 class="section-header">Credit Limit</h3>
+                    <strong class="section-value">$8,000</strong>
+                </div>
             </aside>
         </section>
     </main>
